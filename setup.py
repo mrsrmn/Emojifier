@@ -26,5 +26,5 @@ setuptools.setup(
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     ],
     keywords="emoji emojifyer emojipasta pasta reddit emojis",
-    python_requires='>=3.0',
+    python_requires='>=3.5',
 )
