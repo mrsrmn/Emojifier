@@ -19,8 +19,17 @@ class Emojifier:
     _WORD_DELIMITER = " "
     _MAX_EMOJIS_PER_BLOCK = 2
 
-    def __init__(self):
-        self._emoji_mappings = _get_emoji_mappings()
+    @classmethod
+    def of_default_mappings(cls):
+        return Emojifier(_get_emoji_mappings())
+
+    @classmethod
+    def of_custom_mappings(cls, emoji_mappings):
+        return Emojifier(emoji_mappings)
+
+    def __init__(self, emoji_mappings):
+        self._emoji_mappings = emoji_mappings
+
 
     def generate_emojipasta(self, text):
         blocks = emojifier.util.text.split_into_blocks(text)
