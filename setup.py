@@ -15,7 +15,7 @@ setuptools.setup(
         "Source": "https://github.com/MakufonSkifto/Emojifyer"
     },
     packages=setuptools.find_packages(),
-    install_requires=["requests", "python-dotenv", "aiohttp"],
+    install_requires=["emoji"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.5",
