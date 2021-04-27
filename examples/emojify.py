@@ -1,4 +1,4 @@
-from emojifyer import Emojifier
+from emojifier import Emojifier
 
 emoji = Emojifier()
 
