@@ -19,26 +19,8 @@ class Emojifyer:
     _WORD_DELIMITER = " "
     _MAX_EMOJIS_PER_BLOCK = 2
 
-    """Create with custom emoji mappings.
-    emoji_mappings: a dict that maps from a lowercase word to a
-        list of emojis (the emojis being single-character strings).
-    """
-
-    @classmethod
-    def default_mappings(cls):
-        return Emojifyer(_get_emoji_mappings())
-
-    """Create with custom emoji mappings.
-    emoji_mappings: a dict that maps from a lowercase word to a
-        list of emojis (the emojis being single-character strings).
-    """
-
-    @classmethod
-    def custom_mappings(cls, emoji_mappings):
-        return Emojifyer(emoji_mappings)
-
-    def __init__(self, emoji_mappings):
-        self._emoji_mappings = emoji_mappings
+    def __init__(self):
+        self._emoji_mappings = _get_emoji_mappings()
 
     def generate_emojipasta(self, text):
         blocks = emojifyer.util.text.split_into_blocks(text)
