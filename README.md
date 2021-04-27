@@ -6,7 +6,7 @@
 
 # Emojifier
 
-emojifier is a module for emojifying text
+Emojifier is a module for emojifying text
 
 ## License
 
