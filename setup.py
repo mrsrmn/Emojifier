@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="emojifyer",
-    version="1.0.0",
+    version="1.0.1",
     author="MakufonSkifto",
     description="Emojifyer is a module for emojifying text",
     long_description=long_description,
@@ -25,6 +25,6 @@ setuptools.setup(
         "Programming Language :: Python :: 3.9",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     ],
-    keywords="emoji emojifyer emojipasta pasta reddit emojis",
+    keywords="emoji emojifyer emojipasta pasta reddit emojis emojify",
     python_requires='>=3.5',
 )

@@ -16,3 +16,11 @@ GNU General Public License v3 (GPLv3) [See the license](https://github.com/Makuf
 
 Most of the credit goes to [Kevinpgalligan](https://github.com/Kevinpgalligan) as they are the creator of this project.
 I am only making it compatible with PyPI and making some improvements
+
+## Examples
+
+[Examples folder](https://github.com/MakufonSkifto/Emojifyer/tree/master/examples)
+
+## Documentation
+
+There is no documentation, check the [examples folder](https://github.com/MakufonSkifto/Emojifyer/tree/master/examples) to see the only function
