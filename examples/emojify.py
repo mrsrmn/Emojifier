@@ -1,5 +1,5 @@
-from emojifyer import Emojifyer
+from emojifyer import Emojifier
 
-emoji = Emojifyer()
+emoji = Emojifier()
 
 print(emoji.generate_emojipasta(text="you are nice"))

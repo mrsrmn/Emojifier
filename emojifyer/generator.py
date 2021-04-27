@@ -15,7 +15,7 @@ def _get_alphanumeric_prefix(s):
     return s[:i]
 
 
-class Emojifyer:
+class Emojifier:
     _WORD_DELIMITER = " "
     _MAX_EMOJIS_PER_BLOCK = 2
 
