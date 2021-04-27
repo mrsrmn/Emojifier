@@ -25,6 +25,6 @@ setuptools.setup(
         "Programming Language :: Python :: 3.9",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     ],
-    keywords="reddit api async meme redditapi redditbot asyncreddit redditposts praw discord.py bot",
+    keywords="emoji emojifyer emojipasta pasta reddit emojis",
     python_requires='>=3.0',
 )
