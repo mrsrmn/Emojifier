@@ -10,7 +10,7 @@ Emojifier is a module for emojifying text
 
 ## License
 
-GNU General Public License v3 (GPLv3) [See the license](https://github.com/MakufonSkifto/emojifier/blob/main/LICENSE)
+GNU General Public License v3 (GPLv3) [See the license](https://github.com/MakufonSkifto/Emojifier/blob/master/LICENSE)
 
 ## Credits
 
