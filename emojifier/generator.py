@@ -3,7 +3,7 @@ import io
 import json
 
 import emojifier.util.text
-import emojifier.util.files
+from emojifier.data.emoji_mappings import emoji_mappings
 
 cryptogen = SystemRandom()
 
@@ -63,7 +63,5 @@ _EMOJI_MAPPINGS = None
 
 def _get_emoji_mappings():
     global _EMOJI_MAPPINGS
-    if _EMOJI_MAPPINGS is None:
-        with io.open(emojifier.util.files.PATH_TO_MAPPINGS_FILE, "r", encoding="utf-8") as mappings_file:
-            _EMOJI_MAPPINGS = json.load(mappings_file)
+    _EMOJI_MAPPINGS = emoji_mappings
     return _EMOJI_MAPPINGS
