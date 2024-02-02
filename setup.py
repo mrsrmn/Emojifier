@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="emojifier",
-    version="1.1.1",
+    version="1.1.2",
     author="MakufonSkifto",
     description="Emojifier is a module for emojifying text",
     long_description=long_description,
@@ -15,7 +15,7 @@ setuptools.setup(
         "Source": "https://github.com/MakufonSkifto/Emojifier"
     },
     packages=setuptools.find_packages(),
-    install_requires=["emoji"],
+    install_requires=["emoji>=2.0.0,<3.0.0"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.5",

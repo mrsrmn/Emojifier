@@ -1,9 +1,7 @@
 from random import SystemRandom
-import io
-import json
 
 import emojifier.util.text
-import emojifier.util.files
+from emojifier.data.emoji_mappings import default_emoji_mappings
 
 cryptogen = SystemRandom()
 
@@ -21,7 +19,7 @@ class Emojifier:
 
     @classmethod
     def of_default_mappings(cls):
-        return Emojifier(_get_emoji_mappings())
+        return Emojifier(default_emoji_mappings)
 
     @classmethod
     def of_custom_mappings(cls, emoji_mappings):
@@ -56,14 +54,3 @@ class Emojifier:
         if key in self._emoji_mappings:
             return self._emoji_mappings[_get_alphanumeric_prefix(key)]
         return []
-
-
-_EMOJI_MAPPINGS = None
-
-
-def _get_emoji_mappings():
-    global _EMOJI_MAPPINGS
-    if _EMOJI_MAPPINGS is None:
-        with io.open(emojifier.util.files.PATH_TO_MAPPINGS_FILE, "r", encoding="utf-8") as mappings_file:
-            _EMOJI_MAPPINGS = json.load(mappings_file)
-    return _EMOJI_MAPPINGS
