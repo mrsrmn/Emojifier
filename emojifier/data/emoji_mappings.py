@@ -1,4 +1,4 @@
-emoji_mappings = {
+default_emoji_mappings = {
   "memesec": [
     "👌",
     "👌"
